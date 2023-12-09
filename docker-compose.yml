@@ -1,0 +1,7 @@
+services:
+  bot:
+    build: .
+    container_name: "FilaMagenta_Bot"
+    env_file:
+      - "sample.env"
+      - "secrets.env"

@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.kotlin.jvm)
+    id("application")
 }
 
 group = "com.filamagenta.bot"
@@ -23,4 +24,8 @@ tasks.test {
 
 kotlin {
     jvmToolchain(17)
+}
+
+application {
+    mainClass = "MainKt"
 }
