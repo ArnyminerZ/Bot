@@ -1,0 +1,8 @@
+services:
+  bot:
+    image: arnyminerz/filamagenta-bot:latest
+    container_name: "FilaMagenta_Bot"
+    environment:
+      DATABASE: /app/database.txt
+      PASSWORD: "replace-with-a-safe-password"
+      TOKEN: "change-me"
